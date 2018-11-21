@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+    <!-- scan the package and the sub package -->
+    <context:component-scan base-package="com.universal.web.controller"/>
+    <!-- don't handle the static resource -->
+    <mvc:default-servlet-handler/>
+    <!-- if you use annotation you must configure following setting -->
+    <mvc:annotation-driven/>
+    <mvc:interceptors>
+        <bean class="com.universal.web.interceptors.AuthorityAnnotationInterceptor"></bean>
+        <bean class="com.universal.web.interceptors.CrossDomainInterceptor">
+            <property name="excludedUrls">
+                <list>
+                    <value>/</value>
+                </list>
+            </property>
+        </bean>
+    </mvc:interceptors>
+    <!--Static resources config: Allow static resources can be request directly.-->
+    <mvc:resources mapping="/scripts/**" location="/WEB-INF/scripts/"/>
+    <mvc:resources mapping="/images/**" location="/WEB-INF/images/"/>
+    <mvc:resources mapping="/style/**" location="/WEB-INF/style/"/>
+    <mvc:resources mapping="/fonts/**" location="/WEB-INF/fonts/"/>
+
+    <!-- configure the InternalResourceViewResolver -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+        <property name="order" value="2"/>
+    </bean>
+
+    <!-- titles view resolver-->
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions">
+            <list>
+                <value>/WEB-INF/tiles-defs.xml</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="order" value="1"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"></property>
+    </bean>
+</beans>

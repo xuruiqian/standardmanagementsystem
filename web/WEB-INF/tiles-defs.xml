@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<!-- Definitions for Tiles documentation -->
+<tiles-definitions>
+    <definition name="base.definition" template="/WEB-INF/views/shared/_layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/views/shared/_meta.jsp"/>
+        <put-attribute name="navigation" value="/WEB-INF/views/shared/_navigation.jsp"/>
+        <put-attribute name="script" value="/WEB-INF/views/shared/_scripts.jsp"/>
+        <put-attribute name="header" value="/WEB-INF/views/shared/_header.jsp"/>
+        <put-attribute name="body"/>
+        <put-attribute name="footer" value="/WEB-INF/views/shared/_footer.jsp"/>
+        <put-attribute name="style" value="/WEB-INF/views/shared/_styles.jsp"/>
+    </definition>
+    <definition name="layoutAccount.definition" template="/WEB-INF/views/shared/_layoutaccount.jsp">
+        <put-attribute name="meta" value="/WEB-INF/views/shared/_meta.jsp"/>
+        <put-attribute name="script" value="/WEB-INF/views/shared/_scripts.jsp"/>
+        <put-attribute name="body"/>
+        <put-attribute name="footer" value="/WEB-INF/views/shared/_footer.jsp"/>
+        <put-attribute name="style" value="/WEB-INF/views/shared/_styles.jsp"/>
+    </definition>
+    <definition name="layoutError.definition" template="/WEB-INF/views/shared/_layouterror.jsp">
+        <put-attribute name="meta" value="/WEB-INF/views/shared/_meta.jsp"/>
+        <put-attribute name="script" value="/WEB-INF/views/shared/_scripts.jsp"/>
+        <put-attribute name="body"/>
+        <put-attribute name="footer" value="/WEB-INF/views/shared/_footer.jsp"/>
+        <put-attribute name="style" value="/WEB-INF/views/shared/_styles.jsp"/>
+    </definition>
+    <definition name="subPage.definition" template="/WEB-INF/views/shared/_layoutsubpage.jsp">
+        <put-attribute name="meta" value="/WEB-INF/views/shared/_meta.jsp"/>
+        <put-attribute name="script" value="/WEB-INF/views/shared/_scripts.jsp"/>
+        <put-attribute name="body"/>
+        <put-attribute name="style" value="/WEB-INF/views/shared/_styles.jsp"/>
+    </definition>
+</tiles-definitions>
