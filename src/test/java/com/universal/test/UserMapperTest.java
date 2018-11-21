@@ -1,7 +1,7 @@
 package com.universal.test;
 
-import com.universal.data.Domain.UserWithBLOBs;
-import com.universal.data.Mapper.UserMapper;
+import com.universal.data.domain.UserWithBLOBs;
+import com.universal.data.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

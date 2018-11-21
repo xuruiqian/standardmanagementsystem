@@ -23,7 +23,7 @@ if($("#fileupload").length != 0) {
 //        url: 'server/php/'
         });
 
-        // Enable iframe cross-domain access via redirect Option:
+        // Enable iframe cross-domain access via redirect option:
         $('#fileupload').fileupload(
             'option',
             'redirect',

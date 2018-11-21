@@ -16,6 +16,6 @@
         </environment>
     </environments>
     <mappers>
-        <package name="com.universal.data.Mapper"/>
+        <package name="com.universal.data.mapper"/>
      </mappers>
 </configuration>

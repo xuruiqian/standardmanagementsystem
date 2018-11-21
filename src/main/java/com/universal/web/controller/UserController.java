@@ -1,9 +1,9 @@
 package com.universal.web.controller;
 
-import com.universal.data.Domain.UserWithBLOBs;
-import com.universal.data.Option.AuthorityType;
+import com.universal.data.domain.UserWithBLOBs;
+import com.universal.data.option.AuthorityType;
 import com.universal.web.annotations.Authority;
-import com.universal.service.Contract.IUserService;
+import com.universal.service.contract.UserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -32,7 +32,7 @@ public class UserController extends ControllerBase {
     @RequestMapping(value = "summary", method = RequestMethod.GET)
     public ModelAndView UserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IUserService us = (IUserService) applicationContext.getBean("UserService");
+        UserService us = (UserService) applicationContext.getBean("UserService");
         List<UserWithBLOBs> userList = us.GetUsers();
         Map<String, List<UserWithBLOBs>> data = new HashMap<String, List<UserWithBLOBs>>();
         data.put("userList", userList);
@@ -58,7 +58,7 @@ public class UserController extends ControllerBase {
         UserWithBLOBs user = null;
         if (userid != null) {
             applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-            IUserService us = (IUserService) applicationContext.getBean("UserService");
+            UserService us = (UserService) applicationContext.getBean("UserService");
 
             user = us.GetUserByPrimaryKey(userid);
         }
@@ -71,7 +71,7 @@ public class UserController extends ControllerBase {
         UserWithBLOBs user = null;
         if (userid != null) {
             applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-            IUserService us = (IUserService) applicationContext.getBean("UserService");
+            UserService us = (UserService) applicationContext.getBean("UserService");
 
             user = us.GetUserByPrimaryKey(userid);
         }

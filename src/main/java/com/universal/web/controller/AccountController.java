@@ -1,8 +1,8 @@
 package com.universal.web.controller;
 
-import com.universal.data.Domain.UserWithBLOBs;
-import com.universal.data.Option.AuthorityType;
-import com.universal.service.Contract.IUserService;
+import com.universal.data.domain.UserWithBLOBs;
+import com.universal.data.option.AuthorityType;
+import com.universal.service.contract.UserService;
 import com.universal.utilities.DataBag;
 import com.universal.web.annotations.Authority;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -57,7 +57,7 @@ public class AccountController extends ControllerBase {
         DataBag dataBag = new DataBag();
         dataBag.setStatus("ok");
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IUserService us = (IUserService) applicationContext.getBean("UserService");
+        UserService us = (UserService) applicationContext.getBean("UserService");
         UserWithBLOBs user = us.GetUserByName(username);
 
         if (user != null) {

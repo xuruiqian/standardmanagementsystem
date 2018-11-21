@@ -1,7 +1,7 @@
 package com.universal.test;
 
-import com.universal.data.Domain.UserWithBLOBs;
-import com.universal.service.Contract.IUserService;
+import com.universal.data.domain.UserWithBLOBs;
+import com.universal.service.contract.UserService;
 import com.universal.web.controller.ControllerBase;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,7 +27,7 @@ public class UserServiceTest {
     @Test
     public void TestGetUsers() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IUserService us = (IUserService) applicationContext.getBean("userService");
+        UserService us = (UserService) applicationContext.getBean("userService");
         List<UserWithBLOBs> users = us.GetUsers();
         for (UserWithBLOBs item : users) {
             System.out.println(item.toString());
@@ -37,7 +37,7 @@ public class UserServiceTest {
     @Test
     public void TestCreateUser() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IUserService us = (IUserService) applicationContext.getBean("UserService");
+        UserService us = (UserService) applicationContext.getBean("UserService");
         List<UserWithBLOBs> users = new ArrayList<UserWithBLOBs>();
         for (int i = 0; i < 10; i++) {
 

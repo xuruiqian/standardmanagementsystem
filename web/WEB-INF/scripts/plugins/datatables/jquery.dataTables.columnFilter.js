@@ -199,10 +199,10 @@
 
     function fnCreateSelect(aData) {
         var index = i;
-        var r = '<select class="search_init select_filter"><Option value="" class="search_init">' + label + '</Option>', j, iLen = aData.length;
+        var r = '<select class="search_init select_filter"><option value="" class="search_init">' + label + '</option>', j, iLen = aData.length;
 
         for (j = 0; j < iLen; j++) {
-            r += '<Option value="' + aData[j] + '">' + aData[j] + '</Option>';
+            r += '<option value="' + aData[j] + '">' + aData[j] + '</option>';
         }
         var select = $(r + '</select>');
         th.html(select);

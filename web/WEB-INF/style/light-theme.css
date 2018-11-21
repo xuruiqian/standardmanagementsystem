@@ -1627,16 +1627,16 @@ ul.icons-ul > li .icon-li {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url("../../Fonts/montserrat-bold-webfont.eot");
-    src: url("../../Fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../Fonts/montserrat-bold-webfont.woff") format("woff"), url("../../Fonts/montserrat-bold-webfont.ttf") format("truetype"), url("../../Fonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
+    src: url("../../fonts/montserrat-bold-webfont.eot");
+    src: url("../../fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/montserrat-bold-webfont.woff") format("woff"), url("../../onts/montserrat-bold-webfont.ttf") format("truetype"), url("../../fonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url("../../Fonts/montserrat-regular-webfont.eot");
-    src: url("../../Fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../Fonts/montserrat-regular-webfont.woff") format("woff"), url("../../Fonts/montserrat-regular-webfont.ttf") format("truetype"), url("../../Fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
+    src: url("../../fonts/montserrat-regular-webfont.eot");
+    src: url("../../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/montserrat-regular-webfont.woff") format("woff"), url("../../fonts/montserrat-regular-webfont.ttf") format("truetype"), url("../../fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -2155,7 +2155,6 @@ header .navbar .nav > li > a:focus, header .navbar .nav > li > a:hover {
 #main-nav-bg {
     width: 250px;
     position: absolute;
-    float: left;
     border-right: 1px solid #dddddd;
     background: #f4f4f4;
     display: block;
@@ -2163,6 +2162,7 @@ header .navbar .nav > li > a:focus, header .navbar .nav > li > a:hover {
     z-index: -1;
 }
 
+/*If browser width change to under 768 pixes, when change the tag width into 45 pixes.*/
 @media (max-width: 768px) {
     #main-nav-bg {
         width: 45px;
@@ -2170,8 +2170,7 @@ header .navbar .nav > li > a:focus, header .navbar .nav > li > a:hover {
 }
 
 #main-nav {
-    width: 20%;
-    float: left;
+    width: 250px;
 }
 
 #main-nav.main-nav-fixed {
@@ -2539,16 +2538,44 @@ header .navbar .nav > li > a:focus, header .navbar .nav > li > a:hover {
 
 .main-nav-opened #content {
     margin-left: 251px;
+    width: 80%;
 }
 
 .main-nav-closed #content {
     margin-left: 46px;
+    width: 97%;
 }
 
 @media (max-width: 768px) {
     .main-nav-closed #content .container-fluid {
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+#content {
+    position: absolute;
+    top: 0px;
+    margin-left: 251px;
+    width: 80%;
+    background: #fbfbfb;
+    min-width: 276px;
+    background: #fbfbfb;
+    padding-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+    #content {
+        margin-left: 46px;
+    }
+
+    #content .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #content #content-wrapper {
+        float: left;
     }
 }
 
@@ -2582,32 +2609,8 @@ body.fixed-header #main-nav.main-nav-fixed {
 
 #wrapper {
     position: relative;
-    min-height: 100%;
     overflow: hidden;
-}
-
-#content {
-    float:left;
-    width: 80%;
-    background: #fbfbfb;
-    min-width: 276px;
-    background: #fbfbfb;
-    padding-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-    #content {
-        margin-left: 46px;
-    }
-
-    #content .container-fluid {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    #content #content-wrapper {
-        float: left;
-    }
+    width:100%;
 }
 
 .box {
@@ -2624,9 +2627,9 @@ body.fixed-header #main-nav.main-nav-fixed {
 }
 
 .box .box-header {
-    font-size: 21px;
+    font-size: 16px;
     font-weight: 200;
-    line-height: 30px;
+    line-height: 15px;
     padding: 10px 15px;
     *zoom: 1;
 }

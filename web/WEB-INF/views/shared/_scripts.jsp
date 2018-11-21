@@ -94,6 +94,9 @@
 <script src='../scripts/nav.js' type='text/javascript'></script>
 <script src='../scripts/tables.js' type='text/javascript'></script>
 <script src='../scripts/theme.js' type='text/javascript'></script>
+
+<script src='../scripts/common.js' type='text/javascript'></script>
+
 <!-- / demo -->
 <script src='../scripts/demo/jquery.mockjax.js' type='text/javascript'></script>
 <script src='../scripts/demo/inplace_editing.js' type='text/javascript'></script>

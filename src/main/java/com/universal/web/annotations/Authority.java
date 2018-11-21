@@ -1,6 +1,6 @@
 package com.universal.web.annotations;
 
-import com.universal.data.Option.AuthorityType;
+import com.universal.data.option.AuthorityType;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

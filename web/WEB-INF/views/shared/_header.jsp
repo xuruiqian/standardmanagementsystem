@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<%@ page import="com.universal.data.Domain.UserWithBLOBs" %>
+<%@ page import="com.universal.data.domain.UserWithBLOBs" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%
     UserWithBLOBs currentUser = (UserWithBLOBs) request.getSession().getAttribute("currentUser");

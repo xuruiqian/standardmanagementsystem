@@ -38,7 +38,7 @@
                 <div class='row-fluid'>
                     <div class='span12 box'>
                         <div class='box-content box-padding'>
-                            <%--<input type="button" id="send" value="Get data by async"/>--%>
+                                <%--<input type="button" id="send" value="Get data by async"/>--%>
                             <div class='row-fluid'>
                                 <div class='span12 box bordered-box blue-border' style='margin-bottom:0;'>
                                     <div class='box-header green-background'>
@@ -64,53 +64,68 @@
 </tiles:insertDefinition>
 
 <script type="text/javascript">
-    $(function () {
-        // $('#send').click(function () {
-            $.ajax({
-                type: "GET",
-                url: " http://localhost:8090/api/user/summary",
-                dataType: "json",
-                success: function (data) {
-                    console.info(data);
-                    $('#resText').empty();   //清空resText里面的所有内容
-                    var html =
-                        ' <div class="responsive-table"> ' +
-                        '  <div class="scrollable-area">' +
-                        '   <table class="table table-bordered table-hover table-striped">' +
-                        '       <thead>' +
-                        '           <tr>' +
-                        '            <th>User Name</th>' +
-                        '            <th>Password</th>' +
-                        '            <th>Email</th>' +
-                        '            <th>Gender</th>' +
-                        '            <th>Level</th>' +
-                        '            <th>CreateTime</th>' +
-                        '            <th>UpdateTime</th>' +
-                        '            <th>Remark</th>' +
-                        '           </tr>' +
-                        '       </thead>' +
-                        '       <tbody>';
-                    $.each(data, function (commentIndex, comment) {
-                        html +=
-                            '   <tr> ' +
-                            '       <td>' + comment['name'] + '</td>' +
-                            '       <td>' + comment['password'] + '</td>' +
-                            '       <td>' + comment['email'] + '</td>' +
-                            '       <td>' + comment['gender'] + '</td>' +
-                            '       <td>' + comment['level'] + '</td>' +
-                            '       <td>' + comment['createtime'] + '</td>' +
-                            '       <td>' + comment['updatetime'] + '</td>' +
-                            '       <td>' + comment['remark'] + '</td>' +
-                            '   </tr>';
-                    });
-                    html +=
-                        '       </tbody>' +
-                        '   </table>' +
-                        '  </div>' +
-                        ' </div> ';
-                    $('#resText').html(html);
-                }
-            });
-        // });
+    $(window).load(function () {
+        MessageBox.ConfirmBox("Are you sure do it?", loadData);
     });
+
+    function loadData() {
+        MessageBox.OpenLoadingBox();
+        $.ajax({
+            type: "GET",
+            url: " http://localhost:8090/api/user/summary",
+            dataType: "json",
+            success: function (data) {
+                console.info(data);
+                MessageBox.CloseLoadingBox();
+                $('#resText').empty();   //清空resText里面的所有内容
+                var html =
+                    ' <div class="responsive-table"> ' +
+                    '  <div class="scrollable-area">' +
+                    '   <table class="table table-bordered table-hover table-striped">' +
+                    '       <thead>' +
+                    '           <tr>' +
+                    '            <th>User Name</th>' +
+                    '            <th>Password</th>' +
+                    '            <th>Email</th>' +
+                    '            <th>Gender</th>' +
+                    '            <th>Level</th>' +
+                    '            <th>CreateTime</th>' +
+                    '            <th>UpdateTime</th>' +
+                    '            <th>Remark</th>' +
+                    '           </tr>' +
+                    '       </thead>' +
+                    '       <tbody>';
+                $.each(data, function (commentIndex, comment) {
+                    html +=
+                        '   <tr> ' +
+                        '       <td>' + comment['name'] + '</td>' +
+                        '       <td>' + comment['password'] + '</td>' +
+                        '       <td>' + comment['email'] + '</td>' +
+                        '       <td>' + comment['gender'] + '</td>' +
+                        '       <td>' + comment['level'] + '</td>' +
+                        '       <td>' + comment['createtime'] + '</td>' +
+                        '       <td>' + comment['updatetime'] + '</td>' +
+                        '       <td>' + comment['remark'] + '</td>' +
+                        '   </tr>';
+                });
+                html +=
+                    '       </tbody>' +
+                    '   </table>' +
+                    '  </div>' +
+                    ' </div> ';
+                $('#resText').html(html);
+                MessageBox.SucessBox();
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                MessageBox.CloseLoadingBox();
+                // net::ERR_CONNECTION_REFUSED 发生时，也能进入
+                console.info("jqXHR: " + jqXHR);
+                console.info("textStatus: " + textStatus);
+                console.info("errorThrown: " + errorThrown);
+                console.info("网络出错");
+
+                MessageBox.ErrorBox("网络出错");
+            }
+        });
+    }
 </script>

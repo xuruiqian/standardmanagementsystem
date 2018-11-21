@@ -1,6 +1,6 @@
 package com.universal.web.controller;
 
-import com.universal.data.Option.AuthorityType;
+import com.universal.data.option.AuthorityType;
 import com.universal.web.annotations.Authority;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

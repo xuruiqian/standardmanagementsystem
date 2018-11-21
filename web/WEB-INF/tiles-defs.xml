@@ -3,15 +3,6 @@
         "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <!-- Definitions for Tiles documentation -->
 <tiles-definitions>
-    <definition name="base.definition" template="/WEB-INF/views/shared/_layout.jsp">
-        <put-attribute name="meta" value="/WEB-INF/views/shared/_meta.jsp"/>
-        <put-attribute name="navigation" value="/WEB-INF/views/shared/_navigation.jsp"/>
-        <put-attribute name="script" value="/WEB-INF/views/shared/_scripts.jsp"/>
-        <put-attribute name="header" value="/WEB-INF/views/shared/_header.jsp"/>
-        <put-attribute name="body"/>
-        <put-attribute name="footer" value="/WEB-INF/views/shared/_footer.jsp"/>
-        <put-attribute name="style" value="/WEB-INF/views/shared/_styles.jsp"/>
-    </definition>
     <definition name="layoutAccount.definition" template="/WEB-INF/views/shared/_layoutaccount.jsp">
         <put-attribute name="meta" value="/WEB-INF/views/shared/_meta.jsp"/>
         <put-attribute name="script" value="/WEB-INF/views/shared/_scripts.jsp"/>
@@ -26,10 +17,29 @@
         <put-attribute name="footer" value="/WEB-INF/views/shared/_footer.jsp"/>
         <put-attribute name="style" value="/WEB-INF/views/shared/_styles.jsp"/>
     </definition>
+    <definition name="base.definition" template="/WEB-INF/views/shared/_layout.jsp">
+        <put-attribute name="meta" value="/WEB-INF/views/shared/_meta.jsp"/>
+        <put-attribute name="navigation" value="/WEB-INF/views/shared/_navigation.jsp"/>
+        <put-attribute name="script" value="/WEB-INF/views/shared/_scripts.jsp"/>
+        <put-attribute name="header" value="/WEB-INF/views/shared/_header.jsp"/>
+        <put-attribute name="body"/>
+        <put-attribute name="footer" value="/WEB-INF/views/shared/_footer.jsp"/>
+        <put-attribute name="style" value="/WEB-INF/views/shared/_styles.jsp"/>
+        <put-attribute name="boxconfirm" value="/WEB-INF/views/shared/_boxconfirm.jsp"/>
+        <put-attribute name="boxerror" value="/WEB-INF/views/shared/_boxerror.jsp"/>
+        <put-attribute name="boxinformation" value="/WEB-INF/views/shared/_boxinformation.jsp"/>
+        <put-attribute name="boxloading" value="/WEB-INF/views/shared/_boxloading.jsp"/>
+        <put-attribute name="boxwarning" value="/WEB-INF/views/shared/_boxwarning.jsp"/>
+    </definition>
     <definition name="subPage.definition" template="/WEB-INF/views/shared/_layoutsubpage.jsp">
         <put-attribute name="meta" value="/WEB-INF/views/shared/_meta.jsp"/>
         <put-attribute name="script" value="/WEB-INF/views/shared/_scripts.jsp"/>
         <put-attribute name="body"/>
         <put-attribute name="style" value="/WEB-INF/views/shared/_styles.jsp"/>
+        <put-attribute name="boxconfirm" value="/WEB-INF/views/shared/_boxconfirm.jsp"/>
+        <put-attribute name="boxerror" value="/WEB-INF/views/shared/_boxerror.jsp"/>
+        <put-attribute name="boxinformation" value="/WEB-INF/views/shared/_boxinformation.jsp"/>
+        <put-attribute name="boxloading" value="/WEB-INF/views/shared/_boxloading.jsp"/>
+        <put-attribute name="boxwarning" value="/WEB-INF/views/shared/_boxwarning.jsp"/>
     </definition>
 </tiles-definitions>

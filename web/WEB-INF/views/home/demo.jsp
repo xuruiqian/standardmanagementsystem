@@ -46,7 +46,7 @@
 </div>
 <div>
     <h1>测试requestSCOPE的map测试练习</h1>
-    <form action="<%=basePath%>Home/Index" method="POST">
+    <form action="<%=basePath%>/home/index" method="POST">
         this is test province:<br/>
         Username:<input type="text" name="name"><br>
         password:<input type="text" name="password"><br>

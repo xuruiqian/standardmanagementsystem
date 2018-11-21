@@ -1,7 +1,7 @@
 package com.universal.web.interceptors;
 
-import com.universal.data.Domain.UserWithBLOBs;
-import com.universal.data.Option.AuthorityType;
+import com.universal.data.domain.UserWithBLOBs;
+import com.universal.data.option.AuthorityType;
 import com.universal.web.annotations.Authority;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;

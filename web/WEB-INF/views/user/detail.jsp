@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
-<%@ page import="com.universal.data.Domain.UserWithBLOBs" %>
+<%@ page import="com.universal.data.domain.UserWithBLOBs" %>
 <%
     UserWithBLOBs user = (UserWithBLOBs) request.getAttribute("user");
 %>
@@ -21,7 +21,7 @@
                                 <div class='pull-right'>
                                     <ul class='breadcrumb'>
                                         <li>
-                                            <a href="/Home/Index"><i class='icon-bar-chart'></i>
+                                            <a href="/home/index"><i class='icon-bar-chart'></i>
                                             </a>
                                         </li>
                                         <li class='separator'>

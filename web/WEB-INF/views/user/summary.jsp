@@ -3,7 +3,7 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.universal.data.Domain.UserWithBLOBs" %>
+<%@ page import="com.universal.data.domain.UserWithBLOBs" %>
 <%
     List<UserWithBLOBs> userList = (List<UserWithBLOBs>) request.getAttribute("userList");
 %>
@@ -23,7 +23,7 @@
                             <div class='pull-right'>
                                 <ul class='breadcrumb'>
                                     <li>
-                                        <a href="/Home/Index"><i class='icon-bar-chart'></i>
+                                        <a href="/home/index"><i class='icon-bar-chart'></i>
                                         </a>
                                     </li>
                                     <li class='separator'>

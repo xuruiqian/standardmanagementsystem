@@ -20,7 +20,7 @@
 <header id="header">
     <tiles:insertAttribute name="header"/>
 </header>
-<div id="wrapper" style="width:100%;">
+<div id="wrapper">
     <div id='main-nav-bg'></div>
     <nav id='main-nav'>
         <tiles:insertAttribute name="navigation"/>
@@ -32,21 +32,25 @@
 <div id="footer">
     <tiles:insertAttribute name="footer"/>
 </div>
+<tiles:insertAttribute name="boxconfirm"/>
+<tiles:insertAttribute name="boxerror"/>
+<tiles:insertAttribute name="boxinformation"/>
+<tiles:insertAttribute name="boxloading"/>
+<tiles:insertAttribute name="boxwarning"/>
 <tiles:insertAttribute name="script"/>
 <script>
-    var bodywidth = $("body").width();
+    //var bodywidth = $("body").width();
+    //var navwidth = $("#main-nav").width();
+    //$("#main-nav-bg").css("width", bodywidth - navwidth - 5);
+    //$("#content").css("width", bodywidth - navwidth - 5);
+
     var bodyheight = $("body").height();
-    console.info("body.clientWidth:" + bodywidth);
-    console.info("body.clientHeight:" + bodyheight);
-    var navwidth = $("#main-nav").width();
     var headerheight = $("#header").height();
 
-    $("#content").css("width", bodywidth - navwidth - 5);
-    $("#content").css("height", bodyheight - headerheight + 100);
-    var w = $("#content").width();
-    var h = $("#content").height();
-    console.info("content.width:" + w);
-    console.info("content.height:" + h);
+    $("#wrapper").css("height", bodyheight - headerheight - 30);
+    $("#main-nav-bg").css("height", bodyheight - headerheight - 30);    //Set menu area height.
+    $("#content").css("height", bodyheight - headerheight - 30);        //Set content area height.
+    $("#footer").css("height", 30);
 </script>
 </body>
 </html>
