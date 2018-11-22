@@ -14,12 +14,12 @@ import java.lang.reflect.Method;
 public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws IOException {
-        System.out.println("Annotations checking...");
         if (!(handler instanceof HandlerMethod)) {
 //            String url = "../../Error/404";
 //            response.getWriter().write("<script>top.location.href='" + url + "'</script>");
             return true;
         }
+        System.out.println("Authority checking...");
         HandlerMethod hm = (HandlerMethod) handler;
         Class<?> clazz = hm.getBeanType();
         Method m = hm.getMethod();
@@ -50,7 +50,7 @@ public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
                     if (checkSession(request)) {
                         return true;
                     }
-                    System.out.println("Annotations check no pass!");
+                    System.out.println("Authority check no pass!");
                     String url = "../../account/signin";
                     response.getWriter().write("<script>top.location.href='" + url + "'</script>");
                 }
@@ -60,11 +60,11 @@ public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
                         if (checkPermission(request)) {
                             return true;
                         }
-                        System.out.println("Annotations check no pass!");
+                        System.out.println("Authority check no pass!");
                         String url = "../../account/forbidden";
                         response.getWriter().write("<script>top.location.href='" + url + "'</script>");
                     }
-                    System.out.println("Annotations check no pass!");
+                    System.out.println("Authority check no pass!");
                     String url = "../../account/signin";
                     response.getWriter().write("<script>top.location.href='" + url + "'</script>");
                 }
