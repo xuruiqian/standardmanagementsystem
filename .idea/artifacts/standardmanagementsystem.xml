@@ -167,6 +167,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.0.0.RELEASE" />
           <element id="library" level="project" name="Maven: oro:oro:2.0.8" />
+          <element id="library" level="project" name="Maven: com.alipay.sdk:alipay-sdk-java:3.4.27.ALL" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="standardmanagementsystem/web/Web" />

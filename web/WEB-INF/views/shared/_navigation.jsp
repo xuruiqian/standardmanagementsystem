@@ -186,5 +186,24 @@
                 </li>
             </ul>
         </li>
+        <li>
+            <a class='dropdown-collapse' href='#'>
+                <i class='icon-money'></i>
+                <span>Alipay Management</span>
+                <i class='icon-angle-down angle-down'></i>
+            </a>
+            <ul class='nav nav-stacked'>
+                <li>
+                    <a href="javascript:ShowLeftSubPage('../../alipay/index');">
+                        <i class='icon-user'></i>
+                        <span>Alipay Entry</span>
+                    </a>
+                    <a href="javascript:ShowLeftSubPage('../../alipay/index');">
+                        <i class='icon-user'></i>
+                        <span>Alipay Demo</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
     </ul>
 </div>
