@@ -47,10 +47,34 @@
         });
         $(document).bind("nav-close", function (event, params) {
             body.removeClass("main-nav-opened").addClass("main-nav-closed");
+            var bodywidth = $("body").width();
+            var navwidth = $("#main-nav").width();
+            $("#main-nav-bg").css("width", navwidth);
+            $("#content").css("width", bodywidth - navwidth - 1);
+
+            var bodyheight = $("body").height();
+            var headerheight = $("#header").height();
+
+            $("#wrapper").css("height", bodyheight - headerheight - 30);
+            $("#main-nav-bg").css("height", bodyheight - headerheight - 30);    //Set menu area height.
+            $("#content").css("height", bodyheight - headerheight - 30);        //Set content area height.
+            $("#footer").css("height", 30);
             return nav_open = false;
         });
         return $(document).bind("nav-open", function (event, params) {
             body.addClass("main-nav-opened").removeClass("main-nav-closed");
+            var bodywidth = $("body").width();
+            var navwidth = $("#main-nav").width();
+            $("#main-nav-bg").css("width", navwidth);
+            $("#content").css("width", bodywidth - navwidth - 1);
+
+            var bodyheight = $("body").height();
+            var headerheight = $("#header").height();
+
+            $("#wrapper").css("height", bodyheight - headerheight - 30);
+            $("#main-nav-bg").css("height", bodyheight - headerheight - 30);    //Set menu area height.
+            $("#content").css("height", bodyheight - headerheight - 30);        //Set content area height.
+            $("#footer").css("height", 30);
             return nav_open = true;
         });
     });
