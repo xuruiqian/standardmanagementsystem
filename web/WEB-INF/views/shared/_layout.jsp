@@ -39,18 +39,24 @@
 <tiles:insertAttribute name="boxwarning"/>
 <tiles:insertAttribute name="script"/>
 <script>
-    //var bodywidth = $("body").width();
-    //var navwidth = $("#main-nav").width();
-    //$("#main-nav-bg").css("width", bodywidth - navwidth - 5);
-    //$("#content").css("width", bodywidth - navwidth - 5);
+    function resize() {
+        var bodywidth = $("body").width();
+        var navwidth = $("#main-nav").width();
+        $("#main-nav-bg").css("width", navwidth);
+        $("#content").css("width", bodywidth - navwidth - 1);
 
-    var bodyheight = $("body").height();
-    var headerheight = $("#header").height();
+        var bodyheight = $("body").height();
+        var headerheight = $("#header").height();
 
-    $("#wrapper").css("height", bodyheight - headerheight - 30);
-    $("#main-nav-bg").css("height", bodyheight - headerheight - 30);    //Set menu area height.
-    $("#content").css("height", bodyheight - headerheight - 30);        //Set content area height.
-    $("#footer").css("height", 30);
+        $("#wrapper").css("height", bodyheight - headerheight - 30);
+        $("#main-nav-bg").css("height", bodyheight - headerheight - 30);    //Set menu area height.
+        $("#content").css("height", bodyheight - headerheight - 30);        //Set content area height.
+        $("#footer").css("height", 30);
+    }
+    resize();
+    window.onresize = function () {
+        resize();
+    }
 </script>
 </body>
 </html>
