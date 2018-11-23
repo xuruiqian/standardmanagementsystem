@@ -18,9 +18,8 @@ import java.util.List;
 @Controller
 @RequestMapping(value = "/api/user")
 public class UserApiController extends ControllerBase {
-
-    @ResponseBody
-    @Authority(AuthorityType.HasSessionAndPermission)
+    @Authority(AuthorityType.Pass)
+    @ResponseBody//返回json格式的数据
     @RequestMapping(value = "/summary", method = RequestMethod.GET)
     public String GetUserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
@@ -32,8 +31,9 @@ public class UserApiController extends ControllerBase {
 
         return jsonStr;
     }
+
     @Test
-    public void TestGetUserSummary(){
+    public void TestGetUserSummary() {
         GetUserSummary();
     }
 }

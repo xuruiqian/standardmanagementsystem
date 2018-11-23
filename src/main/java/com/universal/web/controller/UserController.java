@@ -66,7 +66,7 @@ public class UserController extends ControllerBase {
     }
 
     @Authority(AuthorityType.HasSession)
-    @RequestMapping(value = "Profile", method = RequestMethod.GET)
+    @RequestMapping(value = "profile", method = RequestMethod.GET)
     public ModelAndView GetUserProfile(@RequestParam(value = "userid", required = false) String userid) {
         UserWithBLOBs user = null;
         if (userid != null) {

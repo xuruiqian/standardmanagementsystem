@@ -72,7 +72,7 @@
         MessageBox.OpenLoadingBox();
         $.ajax({
             type: "GET",
-            url: " http://localhost:8090/api/user/summary",
+            url: " /api/user/summary",
             dataType: "json",
             success: function (data) {
                 console.info(data);
