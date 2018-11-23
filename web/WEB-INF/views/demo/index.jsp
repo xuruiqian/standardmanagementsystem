@@ -501,7 +501,7 @@
                                                 <ul class='unstyled users list-hover list-striped'>
                                                     <li>
                                                         <div class='avatar pull-left'>
-                                                            <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                            <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                                  width='23'/>
                                                         </div>
                                                         <div class='action pull-left'>
@@ -544,7 +544,7 @@
                                                     </li>
                                                     <li>
                                                         <div class='avatar pull-left'>
-                                                            <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                            <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                                  width='23'/>
                                                         </div>
                                                         <div class='action pull-left'>
@@ -559,7 +559,7 @@
                                                     </li>
                                                     <li>
                                                         <div class='avatar pull-left'>
-                                                            <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                            <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                                  width='23'/>
                                                         </div>
                                                         <div class='action pull-left'>
@@ -574,7 +574,7 @@
                                                     </li>
                                                     <li>
                                                         <div class='avatar pull-left'>
-                                                            <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                            <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                                  width='23'/>
                                                         </div>
                                                         <div class='action pull-left'>
@@ -628,7 +628,7 @@
                                                     </li>
                                                     <li>
                                                         <div class='avatar pull-left'>
-                                                            <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                            <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                                  width='23'/>
                                                         </div>
                                                         <div class='body'>
@@ -657,7 +657,7 @@
                                                     </li>
                                                     <li>
                                                         <div class='avatar pull-left'>
-                                                            <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                            <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                                  width='23'/>
                                                         </div>
                                                         <div class='body'>
@@ -818,7 +818,7 @@
                                             <ul class='unstyled list-hover list-striped'>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -842,7 +842,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -867,7 +867,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -891,7 +891,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -915,7 +915,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -940,7 +940,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -965,7 +965,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -989,7 +989,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -1013,7 +1013,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
@@ -1038,7 +1038,7 @@
                                                 </li>
                                                 <li class='message'>
                                                     <div class='avatar'>
-                                                        <img alt='Avatar' height='23' src='assets/images/avatar.jpg'
+                                                        <img alt='Avatar' height='23' src='/images/avatar.jpg'
                                                              width='23'/>
                                                     </div>
                                                     <div class='name-and-time'>
