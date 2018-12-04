@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <tiles:insertDefinition name="layoutAccount.definition">
     <tiles:putAttribute name="title" value="Sign In"/>
@@ -6,8 +8,8 @@
             <div class='application'>
                 <div class='application-content'>
                     <a href="../../account/signin">
-                        <div class='icon-heart'></div>
-                        <span>Flatty</span>
+                        <div class='icon-leaf'></div>
+                        <span>General Management System</span>
                     </a>
                 </div>
             </div>
@@ -54,4 +56,5 @@
         </div>
     </tiles:putAttribute>
 </tiles:insertDefinition>
+
 
