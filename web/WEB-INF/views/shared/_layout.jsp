@@ -16,7 +16,7 @@
         }
     </script>
 </head>
-<body class='contrast-fb '>
+<body class='contrast-red '>
 <header id="header">
     <tiles:insertAttribute name="header"/>
 </header>

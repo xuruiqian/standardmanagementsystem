@@ -9,7 +9,7 @@
     <tiles:insertAttribute name="meta"/>
     <tiles:insertAttribute name="style"/>
 </head>
-<body class='contrast-fb '>
+<body class='contrast-red '>
 <div id="wrapper">
     <tiles:insertAttribute name="body"/>
 </div>

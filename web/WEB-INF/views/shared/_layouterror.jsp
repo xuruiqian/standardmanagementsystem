@@ -9,7 +9,7 @@
     <tiles:insertAttribute name="meta"/>
     <tiles:insertAttribute name="style"/>
 </head>
-<body class='contrast-fb application-error 404-error contrast-background'>
+<body class='contrast-red application-error 404-error contrast-background'>
 <tiles:insertAttribute name="body"/>
 <div id="footer">
     <tiles:insertAttribute name="footer"/>
