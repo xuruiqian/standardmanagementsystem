@@ -22,7 +22,7 @@
 </header>
 <div id="wrapper">
     <div id='main-nav-bg'></div>
-    <nav id='main-nav'>
+    <nav id='main-nav' style="overflow-y:scroll;">
         <tiles:insertAttribute name="navigation"/>
     </nav>
     <section id='content'>
@@ -49,7 +49,8 @@
         var headerheight = $("#header").height();
 
         $("#wrapper").css("height", bodyheight - headerheight - 30);
-        $("#main-nav-bg").css("height", bodyheight - headerheight - 30);    //Set menu area height.
+        $("#main-nav-bg").css("height", bodyheight - headerheight - 30);
+        $("#main-nav").css("height", bodyheight - headerheight - 30);    //Set menu area height.
         $("#content").css("height", bodyheight - headerheight - 30);        //Set content area height.
         $("#footer").css("height", 30);
     }
