@@ -4,11 +4,11 @@
      style="width:600px;">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style="background: #75b9e6;">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
                 </button>
-                <h2 class="modal-title icon-info-sign" id="confirmboxlabel">
+                <h2 class="modal-title icon-info-sign" style="color:white" id="confirmboxlabel">
                     Confirm
                 </h2>
             </div>

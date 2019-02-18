@@ -74,7 +74,7 @@ var MessageBox = (function (window) {
         },
 
         closeLoadingBox: function () {
-            $("#loadingbox").modal("hide");
+            $("#loadingbox").modal("hide").hide();
         }
     }
     MessageBox.fn.init.prototype = MessageBox.fn;

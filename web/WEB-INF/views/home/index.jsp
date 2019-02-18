@@ -114,7 +114,7 @@
                     '  </div>' +
                     ' </div> ';
                 $('#resText').html(html);
-                MessageBox.SucessBox();
+                //MessageBox.SucessBox();
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 MessageBox.CloseLoadingBox();

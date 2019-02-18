@@ -22,7 +22,7 @@
 </header>
 <div id="wrapper">
     <div id='main-nav-bg'></div>
-    <nav id='main-nav' style="overflow-y:scroll;">
+    <nav id='main-nav' style="overflow-y:auto;">
         <tiles:insertAttribute name="navigation"/>
     </nav>
     <section id='content'>

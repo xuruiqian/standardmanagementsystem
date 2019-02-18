@@ -4,11 +4,11 @@
      aria-labelledby="warningboxlabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style="background: red;">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
                 </button>
-                <h2 class="modal-title icon-comments" id="warningboxlabel">
+                <h2 class="modal-title icon-comments" style="color:white" id="warningboxlabel">
                     System Warning
                 </h2>
             </div>
