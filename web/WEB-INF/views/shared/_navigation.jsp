@@ -16,37 +16,10 @@
     </div>
     <ul class='nav nav-stacked'>
         <li class=''>
-            <a href="javascript:ShowLeftSubPage('../../home/index');">
+            <a href="javascript:ShowLeftSubPage('../../demo/index');">
                 <i class='icon-dashboard'></i>
                 <span>Dashboard</span>
             </a>
-        </li>
-        <li class='active'>
-            <a class='dropdown-collapse' href='#'>
-                <i class='icon-user'></i>
-                <span>Security Management</span>
-                <i class='icon-angle-down angle-down'></i>
-            </a>
-            <ul class='in nav nav-stacked'>
-                <li class='active'>
-                    <a href="javascript:ShowLeftSubPage('../../user/summary');">
-                        <i class='icon-user'></i>
-                        <span>User Management</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../user/summary');">
-                        <i class='icon-user'></i>
-                        <span>Role Management</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../user/summary');">
-                        <i class='icon-user'></i>
-                        <span>Permission Management</span>
-                    </a>
-                </li>
-            </ul>
         </li>
         <li>
             <a class='dropdown-collapse ' href='#'>
@@ -202,6 +175,161 @@
                         <i class='icon-user'></i>
                         <span>Alipay Demo</span>
                     </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a class='dropdown-collapse' href='#'>
+                <i class='icon-shield'></i>
+                <span>Security Management</span>
+                <i class='icon-angle-down angle-down'></i>
+            </a>
+            <ul class='nav nav-stacked'>
+                <li class=''>
+                    <a class='dropdown-collapse' href="javascript:ShowLeftSubPage('../../user/summary');">
+                        <i class='icon-user'></i>
+                        <span>User Management</span>
+                        <i class='icon-angle-down angle-down'></i>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li>
+                            <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                                <i class='icon-caret-right'></i>
+                                <span>User Summary</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:ShowLeftSubPage('../../home/index');">
+                                <i class='icon-caret-right'></i>
+                                <span>User Summary Ajax</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                                <i class='icon-caret-right'></i>
+                                <span>Register User</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=''>
+                    <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                        <i class='icon-group'></i>
+                        <span>Role Management</span>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li class=''>
+                            <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                                <i class='icon-user'></i>
+                                <span>Role Summary</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                                <i class='icon-user'></i>
+                                <span>New Role</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=''>
+                    <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                        <i class='icon-lock'></i>
+                        <span>Permission Management</span>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li class=''>
+                            <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                                <i class='icon-user'></i>
+                                <span>Permission Summary</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                                <i class='icon-user'></i>
+                                <span>Assign Permission</span>
+                            </a>
+                        </li>
+                        <li class=''>
+                            <a href="javascript:ShowLeftSubPage('../../user/summary');">
+                                <i class='icon-user'></i>
+                                <span>New Permission</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a class='dropdown-collapse ' href='#'>
+                <i class='icon-cogs'></i>
+                <span>Settings</span>
+                <i class='icon-angle-down angle-down'></i>
+            </a>
+            <ul class='nav nav-stacked'>
+                <li class=''>
+                    <a href="javascript:ShowLeftSubPage('../../demo/timeline');">
+                        <i class='icon-pencil'></i>
+                        <span>timeline</span>
+                    </a>
+                </li>
+                <li class=''>
+                    <a href="javascript:ShowLeftSubPage('../../demo/inplace_editing');">
+                        <i class='icon-list-ul'></i>
+                        <span>inplace_editing</span>
+                    </a>
+                </li>
+                <li class=''>
+                    <a href="javascript:ShowLeftSubPage('../../demo/fileupload');">
+                        <i class='icon-file'></i>
+                        <span>fileupload</span>
+                    </a>
+                </li>
+                <li class=''>
+                    <a href="javascript:ShowLeftSubPage('../../demo/todo');">
+                        <i class='icon-list-alt'></i>
+                        <span>todo</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a class='dropdown-collapse' href='#'>
+                <i class='icon-folder-open-alt'></i>
+                <span>Four level dropdown</span>
+                <i class='icon-angle-down angle-down'></i>
+            </a>
+            <ul class='nav nav-stacked'>
+                <li>
+                    <a class='dropdown-collapse' href='#'>
+                        <i class='icon-caret-right'></i>
+                        <span>Second level</span>
+                        <i class='icon-angle-down angle-down'></i>
+                    </a>
+                    <ul class='nav nav-stacked'>
+                        <li>
+                            <a class='dropdown-collapse' href='#'>
+                                <i class='icon-caret-right'></i>
+                                <span>Third level</span>
+                                <i class='icon-angle-down angle-down'></i>
+                            </a>
+                            <ul class='nav nav-stacked'>
+                                <li>
+                                    <a href='#'>
+                                        <i class='icon-caret-right'></i>
+                                        <span>Fourth level</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href='#'>
+                                        <i class='icon-caret-right'></i>
+                                        <span>Another fourth level</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </li>
