@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<div class='navigation' style="overflow-y:scroll;">
+<div class='navigation'>
     <div class='search'>
         <form accept-charset="UTF-8" method="get">
             <div style="margin:0;padding:0;display:inline">
