@@ -100,5 +100,16 @@ public class DemoController extends ControllerBase {
         System.out.println("hello,PostIndex!");
         return "demo/invoice";
     }
-
+    @Authority(AuthorityType.HasSession)
+    @RequestMapping(value = "/orders", method = RequestMethod.GET)
+    public String orders() {
+        System.out.println("hello,PostIndex!");
+        return "demo/orders";
+    }
+    @Authority(AuthorityType.HasSession)
+    @RequestMapping(value = "/search_results", method = RequestMethod.GET)
+    public String search_results() {
+        System.out.println("hello,PostIndex!");
+        return "demo/search_results";
+    }
 }

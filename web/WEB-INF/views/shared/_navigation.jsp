@@ -24,7 +24,7 @@
         <li>
             <a class='dropdown-collapse ' href='#'>
                 <i class='icon-cogs'></i>
-                <span>Demo</span>
+                <span>Example pages</span>
                 <i class='icon-angle-down angle-down'></i>
             </a>
             <ul class='nav nav-stacked'>
@@ -76,15 +76,6 @@
                         <span>form_components</span>
                     </a>
                 </li>
-            </ul>
-        </li>
-        <li>
-            <a class='dropdown-collapse ' href='#'>
-                <i class='icon-book'></i>
-                <span>Example pages</span>
-                <i class='icon-angle-down angle-down'></i>
-            </a>
-            <ul class='nav nav-stacked'>
                 <li class=''>
                     <a href="javascript:ShowLeftSubPage('../../demo/form_styles');">
                         <i class='icon-money'></i>
@@ -106,7 +97,7 @@
                 <li class=''>
                     <a href="javascript:ShowLeftSubPage('../../demo/faq');">
                         <i class='icon-table'></i>
-                        <span>faq</span>
+                        <span>FAQ</span>
                     </a>
                 </li>
                 <li class=''>
@@ -116,45 +107,33 @@
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../demo/index');">
+                    <a href="javascript:ShowLeftSubPage('../../error/404');">
                         <i class='icon-question-sign'></i>
                         <span>404 Error</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../demo/index');">
+                    <a href="javascript:ShowLeftSubPage('../../error/500');">
                         <i class='icon-cogs'></i>
                         <span>500 Error</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../demo/index');">
-                        <i class='icon-signin'></i>
-                        <span>Sign in</span>
+                    <a href="javascript:ShowLeftSubPage('../../error/forbidden');">
+                        <i class='icon-cogs'></i>
+                        <span>Forbidden</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../demo/index');">
-                        <i class='icon-bullhorn'></i>
-                        <span>FAQ</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../demo/index');">
+                    <a href="javascript:ShowLeftSubPage('../../demo/orders');">
                         <i class='icon-inbox'></i>
                         <span>Orders</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../demo/index');">
+                    <a href="javascript:ShowLeftSubPage('../../demo/search_results');">
                         <i class='icon-search'></i>
                         <span>Search results</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../demo/index');">
-                        <i class='icon-circle-blank'></i>
-                        <span>Blank page</span>
                     </a>
                 </li>
             </ul>

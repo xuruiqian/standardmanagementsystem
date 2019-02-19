@@ -30,11 +30,11 @@ public class AccountController extends ControllerBase {
     @RequestMapping(value = "/postsignup", method = RequestMethod.POST)
     public String PostSignUp(@RequestParam("username") String username,
                              @RequestParam("email") String email,
-                             @RequestParam("password") String password,
-                             @RequestParam("password_confirmation") String password_confirmation,
-                             @RequestParam(value = "agreement", required = false) String agreement) {
+        @RequestParam("password") String password,
+        @RequestParam("password_confirmation") String password_confirmation,
+        @RequestParam(value = "agreement", required = false) String agreement) {
 
-        return "redirect:/account/signin";
+            return "redirect:/account/signin";
     }
 
     @Authority(AuthorityType.Pass)
