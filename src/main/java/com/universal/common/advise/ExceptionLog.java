@@ -1,4 +1,4 @@
-package com.universal.advise;
+package com.universal.common.advise;
 
 import org.springframework.aop.ThrowsAdvice;
 

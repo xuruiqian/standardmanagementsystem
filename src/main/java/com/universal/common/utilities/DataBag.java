@@ -1,4 +1,4 @@
-package com.universal.utilities;
+package com.universal.common.utilities;
 
 public class DataBag {
     private String status;

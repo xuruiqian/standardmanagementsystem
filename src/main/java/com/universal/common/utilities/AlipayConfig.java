@@ -1,4 +1,4 @@
-package com.universal.utilities;
+package com.universal.common.utilities;
 
 import java.io.FileWriter;
 import java.io.IOException;

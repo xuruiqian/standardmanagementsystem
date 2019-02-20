@@ -10,7 +10,7 @@
 <%@ page import="com.universal.utilities.*"%>
 <%@ page import="com.alipay.api.*"%>
 <%@ page import="com.alipay.api.internal.util.*"%>
-<%@ page import="com.universal.utilities.AlipayConfig" %>
+<%@ page import="com.universal.common.utilities.AlipayConfig" %>
 <%
 /* *
  * 功能：支付宝服务器同步通知页面

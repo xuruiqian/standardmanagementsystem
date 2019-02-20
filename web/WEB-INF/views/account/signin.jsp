@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%@ page import="com.universal.utilities.DataBag" %>
+<%@ page import="com.universal.common.utilities.DataBag" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%
     DataBag dataBag = (DataBag) request.getAttribute("dataBag");

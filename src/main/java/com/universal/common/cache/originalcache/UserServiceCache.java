@@ -1,4 +1,4 @@
-package com.universal.cache.originalcache;
+package com.universal.common.cache.originalcache;
 
 import com.universal.data.domain.UserWithBLOBs;
 

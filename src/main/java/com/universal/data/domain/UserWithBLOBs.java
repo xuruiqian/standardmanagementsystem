@@ -1,6 +1,6 @@
 package com.universal.data.domain;
 
-import com.universal.utilities.DateUtil;
+import com.universal.common.utilities.DateUtil;
 
 public class UserWithBLOBs extends User {
     private String email;

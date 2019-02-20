@@ -1,4 +1,4 @@
-package com.universal.utilities.sms;
+package com.universal.common.sms;
 
 /**
  * @class:SMSConstants

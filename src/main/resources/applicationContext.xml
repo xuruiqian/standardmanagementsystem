@@ -65,8 +65,8 @@
     <!--<bean name="UserServiceImpl" class="UserServiceImpl" scope="singleton"></bean>-->
 
     <!--Aop Config-->
-    <bean id="beforeLog" class="com.universal.advise.BeforeLog"/>
-    <bean id="afterLog" class="com.universal.advise.AfterLog"></bean>
+    <bean id="beforeLog" class="com.universal.common.advise.BeforeLog"/>
+    <bean id="afterLog" class="com.universal.common.advise.AfterLog"></bean>
     <aop:config>
         <aop:pointcut expression="execution(* com.universal.service.implementation.*.*(..))" id="servicepointcut"/>
         <aop:advisor advice-ref="beforeLog" pointcut-ref="servicepointcut"/>
